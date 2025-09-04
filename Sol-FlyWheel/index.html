@@ -1,5 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8"><title>Sol Flywheel</title></head>
-  <body><h1>Solana Flywheel Ready</h1></body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sol Flywheel</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif; background:#0b0b12; color:#e8e8f0; padding: 48px; }
+      .card { max-width: 760px; margin:auto; background:#11111a; border:1px solid #242438; border-radius:16px; padding:24px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+      h1 { margin-top:0; font-size:28px; }
+      code { background:#19192a; padding:2px 6px; border-radius:6px; }
+      a { color:#8fb3ff; }
+      .grid { display:grid; gap:12px; }
+      .muted { opacity:.8; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>🚀 Solana Flywheel</h1>
+      <p class="muted">Hobby‑friendly setup. Use an external scheduler to call <code>/api/flywheel</code> every 20 minutes.</p>
+      <div class="grid">
+        <div>Health check: <a href="/api/health"><code>/api/health</code></a></div>
+        <div>Manual trigger: <a href="/api/flywheel?key=YOUR_SECRET"><code>/api/flywheel?key=YOUR_SECRET</code></a></div>
+      </div>
+      <p class="muted">Set <code>RPC_URL</code>, <code>SECRET_KEY_B58</code>, <code>TOKEN_MINT</code>, and <code>CRON_KEY</code> in Vercel → Environment Variables.</p>
+    </div>
+  </body>
 </html>
