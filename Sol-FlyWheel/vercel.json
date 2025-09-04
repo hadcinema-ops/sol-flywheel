@@ -1,4 +1,0 @@
-{
-  "crons": [ { "path": "/api/flywheel", "schedule": "*/20 * * * *" } ],
-  "functions": { "api/*.js": { "runtime": "nodejs18.x" } }
-}
